@@ -3,16 +3,103 @@
   <head>
     <meta charset="utf-8">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-    <title>Golden Dawn</title>
+    <style media="screen">
+        body {
+          margin:0;
+        }
+        .image {
+          position:absolute;
+          width:100%;
+          height:100%;
+          background:green;
+          background-image:url('https://images.newrepublic.com/48aca003f29f77ba082571055dfc631f5830a6cb.jpeg?w=1000&q=65&dpi=1&fm=pjpg&fit=crop&crop=faces&h=667');
+          background-size:cover;
+        }
+        .content {
+          position:absolute;
+          width:100%;
+          top:100%;
+          height: 100px;
+        }
+       .cover {
+         position: absolute;
+         margin-top: 30vh;
+         margin-left: 25vw;
+        }
+    </style>
+    <title>GOLDEN DAWN</title>
   </head>
   <body>
-    <div class="navbar navbar-light bg-light mb-3 fixed-top">
-      <div class="navbar-brand mr-auto">
-        <a class="navbar-brand" href="/">Golden Dawn</a>
-        <a class="btn btn-outline-primary mx-1" href="/history">History</a>
-        <a class="btn btn-outline-primary mx-1" href="/electorate">Electorate</a>
-        <a class="btn btn-outline-primary mx-1" href="/impact">Impact</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand brandSize" href="/">GOLDEN DAWN</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item itemSpacing">
+            <a class="nav-link linkSize" href="/history">History</a>
+          </li>
+          <li class="nav-item itemSpacing">
+            <a class="nav-link linkSize" href="/electorate">Electorate</a>
+          </li>
+          <li class="nav-item itemSpacing">
+            <a class="nav-link linkSize" href="/conflict">Conflict</a>
+          </li>
+          <li class="nav-item itemSpacing">
+            <a class="nav-link linkSize" href="/impact">Impact</a>
+          </li>
+        </ul>
       </div>
+    </nav>
+      <div class='image'>
+       </div>
+       <div class="cover text-center">
+         <h1 class="display-2" style="color:white; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;"><strong>GOLDEN DAWN</strong></h1>
+         <a class="btn btn-warning" href="#intro">EXPLORE</a></div>
+       <div class='content'>
+      <br>
+      <div class="container-fluid">
+        <div class="card border-info mb-3">
+            <div class="card-header"><h1 id="#intro" class="text-center">Who are they?</h1></div>
+            <div class="card-body">
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">Greece belongs to the Greeks!</p>
+                <footer class="blockquote-footer">Ilias Panayiotaros, Golden Dawn MP</footer>
+              </blockquote>
+              <hr>
+              <div class="row">
+                <div class="col-md-6 center">
+                  <div class="card border-info mb-3">
+                    <div class="card-header"><strong>General Information</strong></div>
+                    <div class="card-body">
+                        <div id="info"></div>
+                        <ul>
+                          <li>far-right political party in Athens, Greece</li>
+                          <li>led by Nikolaos Michaloliakos</li>
+                          <li>founded on January 1st, 1985; 34 years ago</li>
+                          <li>has gained an increase in support over the years, particularly in 2012, when they ran a campaign based on concerns about unemployment, the economy, and immigration</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border-info mb-3 center">
+                      <div class="card-header"><strong>Values</strong></div>
+                      <div class="card-body">
+                        <div id="graduation"></div>
+                        <ul>
+                          <li>Eurosceptic, anti-globalist</li>
+                          <li>nationalist</li>
+                          <li>promotes the idea of a Greater Greece through the expansion of Greek territory</li>
+                          <li>opposes non-European, and particularly Muslim, immigration into the mainly Greek areas of southern Greece and Athens</li>
+                          <li>aspires to combat Islam in the region</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
     </div>
+  </div>
+</div>
   </body>
 </html>
