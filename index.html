@@ -9,6 +9,7 @@
         }
         body {
           margin:0;
+          height:1500px;
         }
         .image {
           position:absolute;
@@ -32,6 +33,18 @@
         .navbar.bg-dark {
           background-color: black;
           transition: background-color 1s ease 0.5s;
+        }
+        .flag {
+          display: none;
+          margin-left: 30vw;
+        }
+        .flag2 {
+          display: none;
+          margin-left: 55vw;
+        }
+        .flag2 img {
+          height: 270px;
+          width: auto;
         }
     </style>
 
@@ -66,49 +79,56 @@
          <!-- <h1 class="display-2" style="color:white; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;"><strong>GOLDEN DAWN</strong></h1> -->
          <h1 class="display-2" style="color:white; font-weight: 900; font-family: 'Helvetica', serif; -webkit-text-fill-color: white; /* Will override color (regardless of order) */ -webkit-text-stroke-width: 4px; -webkit-text-stroke-color: black;"><strong>GOLDEN DAWN</strong></h1>
          <br><a class="btn btn-danger btn-lg" href="#intro">EXPLORE</a></div>
-       <div class='content'>
+       <div id="intro" class='content'>
       <br>
         <br><br>
       <div class="container-fluid">
         <div class="card border-info mb-3">
-            <div class="card-header"><h1 id="intro" class="text-center">Who are they?</h1></div>
+            <div class="card-header"><h1 class="text-center">Who are they?</h1></div>
             <div class="card-body">
               <blockquote class="blockquote text-center">
-                <p class="mb-0">Greece belongs to the Greeks!</p>
-                <footer class="blockquote-footer">Ilias Panayiotaros, Golden Dawn MP</footer>
+                <p class="mb-0">&#8220;So we can rid this land of filth.&#8221;</p>
+                <footer class="blockquote-footer">Golden Dawn campaign slogan, 2012</footer>
               </blockquote>
               <hr>
               <div class="row">
                 <div class="col-md-6 center">
                   <div class="card border-info mb-3">
-                    <div class="card-header"><strong>General Information</strong></div>
+                    <div class="card-header"><strong>Overview</strong></div>
                     <div class="card-body">
                         <div id="info"></div>
                         <ul>
-                          <li>far-right political party in Athens, Greece</li>
+                          <li>far-right political party headquartered in Athens, Greece</li>
                           <li>led by Nikolaos Michaloliakos</li>
                           <li>founded on January 1st, 1985; 34 years ago</li>
-                          <li>has gained an increase in support over the years, particularly in 2012, when they ran a campaign based on concerns about unemployment, the economy, and immigration</li>
+                          <li>has shown an admiration for past Greek dictators and for figures in Nazi Germany</li>
+                          <li>has gained an increase in support over the years, particularly after the 2008-09 global financial crisis</li>
+                          <li>has been involved in many cases of violence and vandalism</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="card border-info mb-3 center">
-                      <div class="card-header"><strong>Values</strong></div>
+                      <div class="card-header"><strong>Ideology and Values</strong></div>
                       <div class="card-body">
                         <div id="values"></div>
                         <ul>
                           <li>Eurosceptic, anti-globalist</li>
                           <li>nationalist</li>
-                          <li>promotes the idea of a Greater Greece through the expansion of Greek territory</li>
+                          <li>social conservative</li>
+                          <li>promotes the idea of a Greater Greece through the expansion of Greek territory into parts of Macedonia, Albania, and Bulgaria</li>
                           <li>opposes non-European, and particularly Muslim, immigration into the mainly Greek areas of southern Greece and Athens</li>
-                          <li>aspires to combat Islam in the region</li>
+                          <li>contributes to combating Islam in the region</li>
                         </ul>
                       </div>
                     </div>
                   </div>
     </div>
+    <hr>
+    <h1 id="question" class="text-center mb-3">Does this remind you of <em>another</em> flag?</h1>
+    <div class="flag"><img src="https://miro.medium.com/max/720/1*4CMxJtHlnokwvaB9ImJtRw.png" alt=""></div>
+    <div class="flag2"><img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Germany_%281935%E2%80%931945%29.svg" alt=""></div>
   </div>
 </div>
   </body>
@@ -131,6 +151,27 @@
               // $('.navbar').addClass('navbar-dark');
           }
         });
+  });
+    $(window).scroll(function () {
+      var y = $(this).scrollTop();
+      if (y > 800) {
+          $('.flag').fadeIn(2000);
+      }
+      // else {
+      //     $('.flag').fadeOut();
+      // }
+
+  });
+  var i = true;
+  $( "#question" ).click(function() {
+    if(i) {
+      $('.flag').css({
+        'position': 'absolute'
+      });
+      $( ".flag" ).animate({ left: "-=300px" }, 500 );
+      $('.flag2').fadeIn(3000);
+      i = false;
+    }
   });
   </script>
 </html>
