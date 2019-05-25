@@ -14,8 +14,8 @@
           position:absolute;
           width:100%;
           height:100%;
-          background:green;
-          background-image:url('https://images.newrepublic.com/48aca003f29f77ba082571055dfc631f5830a6cb.jpeg?w=1000&q=65&dpi=1&fm=pjpg&fit=crop&crop=faces&h=667');
+          background:blue;
+          background-image:url('https://www.aljazeera.com/mritems/Images/2018/7/7/f5d19c2e3f934102b8d628b85ef33bed_18.jpg');
           background-size:cover;
         }
         .content {
@@ -29,11 +29,16 @@
          margin-top: 36vh;
          margin-left: 25vw;
         }
+        .navbar.bg-dark {
+          background-color: black;
+          transition: background-color 1s ease 0.5s;
+        }
     </style>
+
     <title>GOLDEN DAWN</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
       <a class="navbar-brand brandSize" href="/greece">GOLDEN DAWN</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,6 +68,7 @@
          <br><a class="btn btn-danger btn-lg" href="#intro">EXPLORE</a></div>
        <div class='content'>
       <br>
+        <br><br>
       <div class="container-fluid">
         <div class="card border-info mb-3">
             <div class="card-header"><h1 id="intro" class="text-center">Who are they?</h1></div>
@@ -106,4 +112,25 @@
   </div>
 </div>
   </body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+        // Transition effect for navbar
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 500) {
+              // $('.navbar').removeClass('navbar-dark');
+              // $('.navbar').addClass('navbar-light');
+              // $('.navbar').addClass('bg-light');
+              $('.navbar').addClass('bg-dark');
+          } else {
+              // $('.navbar').removeClass('bg-light');
+              $('.navbar').removeClass('bg-dark');
+              // $('.navbar').removeClass('navbar-light');
+              // $('.navbar').addClass('navbar-dark');
+          }
+        });
+  });
+  </script>
 </html>
