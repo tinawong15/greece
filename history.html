@@ -6,7 +6,7 @@
     <title>History</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand brandSize" href="/greece">GOLDEN DAWN</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,5 +28,85 @@
         </ul>
       </div>
     </nav>
+    <br><br><br>
+    <div class="timeline" id="timeline-horizontal">
+        <div class="timeline__wrap">
+            <div class="timeline__items">
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>December 1980</h2>
+                        <img style="float: left; display: inline-block; height: 125px; width: auto;" class="pr-3" src="https://upload.wikimedia.org/wikipedia/en/2/27/HA1cover.jpg" alt="">
+                        <p>Michaloliakos begins the publication <em>Chrysí Avgí</em>, which praised Nazism for its connection to classical Greek philosophical ideals.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>April 1984</h2>
+                        <p>Michaloliakos takes over as leader of the National Political Union’s youth section, a party founded by Georgios Papadopoulos, the head of the Greek military junta that ruled Greece from 1967 to 1974.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>January 1985</h2>
+                        <p>Michaloliakos leaves the National Political Union and starts the Golden Dawn party, described as a “Popular National Movement”.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>1993</h2>
+                        <p>Golden Dawn is officially recognized as a political party.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>1994</h2>
+                        <p>Golden Dawn begins running in elections, but attracts little support.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>2010</h2>
+                        <img style="float: left; display: inline-block; height: 125px; width: auto;" class="pr-3" src="https://www.economist.com/sites/default/files/imagecache/1280-width/images/2013/10/blogs/economist-explains/20131005_blp505.jpg" alt="">
+                        <p>Michaloliakos is elected to the Athens City Council, which helps Golden Dawn gain recognition as more than a fringe party.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>May 2012</h2>
+                        <img style="float: left; display: inline-block; height: 125px; width: auto;" class="pr-3" src="https://myplacefp7.files.wordpress.com/2012/05/poster-1.jpg" alt="">
+                        <p>The party runs a campaign during the Greek national elections based on concerns about unemployment, austerity, the economy, and immigration.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>September 2013</h2>
+                        <img style="float: left; display: inline-block; height: 100px; width: auto;" class="pr-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/%CE%A0%CE%B1%CF%8D%CE%BB%CE%BF%CF%82_%CE%A6%CF%8D%CF%83%CF%83%CE%B1%CF%82_2011.jpeg/440px-%CE%A0%CE%B1%CF%8D%CE%BB%CE%BF%CF%82_%CE%A6%CF%8D%CF%83%CF%83%CE%B1%CF%82_2011.jpeg" alt="">
+                        <p>A supporter of the party murders Pavlos Fyssas, an anti-fascist rapper. Michaloliakos, along with four other MPs and 14 party supporters, are arrested.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>October 2013</h2>
+                        <p>Greek parliament votes to cut state funding for the Golden Dawn party, 235 to 0.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h2>April 2015</h2>
+                        <p>Trial begins and is still ongoing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
   </body>
+  <link href="dist/css/timeline.min.css" rel="stylesheet">
+  <script src="dist/js/timeline.min.js"></script>
+  <script type="text/javascript">
+    timeline(document.querySelectorAll('.timeline'), {
+      forceVerticalMode: 800,
+      mode: 'horizontal',
+      visibleItems: 3
+    });
+  </script>
 </html>
