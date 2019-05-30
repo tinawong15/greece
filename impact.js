@@ -230,22 +230,30 @@ var draw = function() {
                   .attr("height", height)
                   .attr("width", width);
   countries = svg.append("g");
-
+  var color = d3.scaleLinear()
+              .domain(voteRange)
+              .range(['ffffff', '#ff0000']);
   d3.json("https://gist.githubusercontent.com/milafrerichs/69035da4707ea51886eb/raw/4cb1783c2904f52cbb8a258ee96031f9054d155b/eu.topojson", function(data) {
-    var country = countries.selectAll('.country')
+    var country = svg.selectAll('.country')
       .data(topojson.feature(data, data.objects.europe).features)
       .enter()
       .append('path')
       .attr('class', 'country')
       .attr('d', path)
-      .style('fill', 'white')
+      .attr('id', function(d) {
+        if (!polls[d.properties.name]){
+        return color(0)
+      }
+      else{
+      console.log(polls[d.properties.name]["votes"]["2009"])
+       return color(polls[d.properties.name]["votes"]["2009"])}})
+      //.style('fill', 'white')
+      .style('fill', function(d) { return color(d.id);})
       .style('stroke', 'black');
     //return;
 
 
-  var color = d3.scaleLinear()
-              .domain(voteRange)
-              .range(['ffffff', '#ff0000']);
+
 
 
 
@@ -276,7 +284,7 @@ var draw = function() {
               return color(0)
             }
             else{
-
+            console.log(polls[d.properties.name]["votes"][year])
              return color(polls[d.properties.name]["votes"][year])
            }
            });
