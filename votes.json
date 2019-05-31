@@ -1,5 +1,4 @@
-var polls =
-{ "Greece": {
+{ "country" : "Greece",
   "party": "Golden Dawn",
   "leader": "Nikolaos Michaloliakos",
   "votes": {
@@ -16,7 +15,7 @@ var polls =
     "2019": 7
   }
 },
-"Sweden": {
+{ "country": "Sweden"
   "party": "Sweden Democrats",
   "leader": "",
   "votes": {
@@ -34,7 +33,7 @@ var polls =
   }
 
   } ,
-  "France": {
+   { "country": "France",
     "party": "National Rally",
     "leader": "Marine Le Pen",
     "votes": {
@@ -53,7 +52,7 @@ var polls =
     }
 
     } ,
-    "Netherlands": {
+   { "country":   "Netherlands",
       "party": "Party for Freedom",
       "leader": "Geert Wilder",
       "votes": {
@@ -72,45 +71,45 @@ var polls =
       }
 
       } ,
-      "Finland": {
+      { "country" :"Finland",
         "party": "The Finns",
         "leader": "",
         "votes": {
-          "2009": ,
-          "2010": ,
+          "2009": 0,
+          "2010": 0,
           "2011": 19.05,
-          "2012": ,
-          "2013": ,
+          "2012": 0,
+          "2013": 0,
           "2014": 12.87,
           "2015": 17.65,
-          "2016": ,
-          "2017": ,
-          "2018": ,
+          "2016": 0,
+          "2017": 0,
+          "2018": 0,
           "2019": 17.7
 
         }
 
         } ,
-        "Denmark": {
+        { "country" : "Denmark",
           "party": "Danish People's Party",
           "leader": "",
           "votes": {
             "2009": 15.3,
-            "2010": ,
+            "2010": 0,
             "2011": 12.3,
-            "2012": ,
-            "2013": ,
+            "2012": 0,
+            "2013": 0,
             "2014": 26.6,
             "2015": 21.1,
-            "2016": ,
-            "2017": ,
+            "2016": 0,
+            "2017": 0,
             "2018": 21,
             "2019": 10.8
 
           }
 
           } ,
-          "Germany": {
+          { "country" : "Germany",
             "party": "Alternative for Germany",
             "leader": "",
             "votes": {
@@ -129,64 +128,63 @@ var polls =
             }
 
             } ,
-            "Hungary":{
+            { "country": "Hungary",
               "party": "Fidesz",
               "leader": "",
               "votes": {
                 "2009": 56.36,
                 "2010": 52.73,
-                "2011": ,
-                "2012": ,
-                "2013": ,
+                "2011": 0,
+                "2012": 0,
+                "2013": 0,
                 "2014": 44.87,
-                "2015": ,
-                "2016": ,
-                "2017": ,
+                "2015": 0,
+                "2016": 0,
+                "2017": 0,
                 "2018": 49.27,
                 "2019": 52
 
               }
 
               } ,
-              "Switzerland":{
+              { "country" : "Switzerland",
                 "party": "Swiss People's Party",
                 "leader": "",
                 "votes": {
-                  "2009": ,
-                  "2010": ,
+                  "2009": 0,
+                  "2010": 0,
                   "2011": 26.6,
-                  "2012": ,
-                  "2013": ,
-                  "2014": ,
+                  "2012": 0,
+                  "2013": 0,
+                  "2014": 0,
                   "2015": 29.4,
-                  "2016": ,
-                  "2017": ,
-                  "2018": ,
+                  "2016": 0,
+                  "2017": 0,
+                  "2018": 0,
                   "2019": 29
 
                 }
 
                 } ,
-                "Austria":{
+                { "country" : "Austria",
                   "party": "Freedom Party",
                   "leader": "",
                   "votes": {
                     "2009": 12.7,
-                    "2010": ,
-                    "2011": ,
-                    "2012": ,
+                    "2010": 0,
+                    "2011": 0,
+                    "2012": 0,
                     "2013": 20.5,
                     "2014": 19.7,
-                    "2015": ,
-                    "2016": ,
+                    "2015": 0,
+                    "2016": 0,
                     "2017": 26,
-                    "2018": ,
+                    "2018": 0,
                     "2019": 26
-
                   }
 
                   } ,
-                  "Spain":{
+                  { "country" : "Spain",
                     "party": "Vox",
                     "leader": "",
                     "votes": {
