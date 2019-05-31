@@ -30,10 +30,10 @@
     "2017": 12.9,
     "2018": 17.5,
     "2019": 17.6
-  }
+    }
 
   } ,
-   { "country": "France",
+{ "country": "France",
     "party": "National Rally",
     "leader": "Marine Le Pen",
     "votes": {
@@ -51,8 +51,8 @@
 
     }
 
-    } ,
-   { "country":   "Netherlands",
+} ,
+{ "country":   "Netherlands",
       "party": "Party for Freedom",
       "leader": "Geert Wilder",
       "votes": {
@@ -203,4 +203,7 @@
                     }
 
                   }
+<<<<<<< Updated upstream
                 
+=======
+>>>>>>> Stashed changes

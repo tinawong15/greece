@@ -3,6 +3,79 @@
   <head>
     <meta charset="utf-8">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <style media="screen">
+        body {
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        div#layout {
+          text-align: center;
+        }
+
+        div#container {
+          width: 1000px;
+          height: 500px;
+          margin: auto;
+          background-color: #2F4A6D;
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+
+        .bar {
+          fill: #80cbc4;
+        }
+
+        text {
+          font-size: 14px;
+          fill: #fff;
+        }
+
+        path {
+          stroke: gray;
+        }
+
+        line {
+          stroke: gray;
+        }
+
+        line#limit {
+          stroke: #FED966;
+          stroke-width: 3;
+          stroke-dasharray: 3 6;
+        }
+
+        .grid path {
+          stroke-width: 0;
+        }
+
+        .grid .tick line {
+          stroke: #9FAAAE;
+          stroke-opacity: 0.3;
+        }
+
+        text.divergence {
+          font-size: 17px;
+          fill: #2F4A6D;
+        }
+
+        text.value {
+          font-size: 16px;
+        }
+
+        text.title {
+          font-size: 35px;
+          font-weight: 600;
+        }
+
+        text.label {
+          font-size: 20px;
+          font-weight: 400;
+        }
+      </style>
     <title>History</title>
   </head>
   <body>
@@ -28,5 +101,82 @@
         </ul>
       </div>
     </nav>
+    <!-- <div id = "line_graph">
+      <input type="checkbox" name="vehicle1" value="unemp_ad"> Adult Unemployment Rate<br>
+      <input type="checkbox" name="vehicle2" value="unemp_yo"> Youth Unemployment Rate<br>
+      <input type="checkbox" name="vehicle3" value="ill_ent_res" checked> Immigrants arrested for Illegal Entrance or Residence<br>
+      <input type="checkbox" name="vehicle1" value="homicide"> Homicide Rates<br>
+      <input type="checkbox" name="vehicle2" value="hate_crime"> Hate Crime Rates<br>
+
+    </div> -->
+
+    <div class="col-md-6 center">
+      <div class="card border-info mb-3">
+        <div class="card-header"><h3><strong> Causes of Conflict:</strong></h3></div>
+        <div class="lead card-body">
+            <div id="causes"></div>
+              <ul>
+                <li>took advantage of growing public anger fueled by corruption and mismanagement</li>
+                <li>drastic cuts to jobs</li>
+                <li>wages and pensions enforced by international lenders</li>
+                <li>wanted to "get the Stench out of Greece"</li>
+
+              </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-6 center">
+        <div class="card border-info mb-3">
+          <div class="card-header"><h3><strong> Causes of Conflict:</strong></h3></div>
+          <div class="lead card-body">
+              <div id="causes"></div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Od55SBFKh9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-info mb-3 center">
+            <div class="card-header"><h3><strong>Police</strong></h3></div>
+            <div class="lead card-body">
+              <div id="police"></div>
+              <p>
+                The government has been reluctant to address the violence perpetrated against immigrants. When Athens residents seek help from the police, authorities direct them to the Golden Dawn to find a "solution" for what is seen as an "immigrant problem." Thusly, the Golden Dawn was able to run on a twin platform for the 2012 general elections: opposition to immigration and condemnation of the bailouts.
+                To this day, the police remain a conservative enclave.
+              </p>
+              </div>
+          </div>
+        </div>
+
+
+              <div class="col-md-6 center">
+                <div class="card border-info mb-3">
+                  <div class="card-header"><h3><strong> Detention Centers</strong></h3></div>
+                  <div class="lead card-body">
+                      <div id="detention_center"></div>
+                        Recently, Panousis has pledged to shut down the detention centers that housed immigrants in appalling conditions for the conservative government iniative Xenios Zeus, which had been condemned as inhumane by the UN. It serves as a reminder of the Right's determination to use fear of crime and immigration to muster support among an insecure populace.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-info mb-3 center">
+                    <div class="card-header"><h3><strong>Detetion Centers</strong></h3></div>
+                    <div class="lead card-body">
+                      <div id="recruitment"></div>
+                      <img src = "./det_center.jpg"> </img>
+                      </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+    <p>
+    </p>
+    <script src = "conflict.js"> </script>
   </body>
 </html>
