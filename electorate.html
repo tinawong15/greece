@@ -4,6 +4,83 @@
     <meta charset="utf-8">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style media="screen">
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    div#layout {
+      text-align: center;
+    }
+
+    div#container {
+      width: 1000px;
+      height: 500px;
+      margin: auto;
+      background-color: #2F4A6D;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .bar {
+      fill: #80cbc4;
+    }
+
+    text {
+      font-size: 12px;
+      fill: #fff;
+    }
+
+    path {
+      stroke: gray;
+    }
+
+    line {
+      stroke: gray;
+    }
+
+    line#limit {
+      stroke: #FED966;
+      stroke-width: 3;
+      stroke-dasharray: 3 6;
+    }
+
+    .grid path {
+      stroke-width: 0;
+    }
+
+    .grid .tick line {
+      stroke: #9FAAAE;
+      stroke-opacity: 0.3;
+    }
+
+    text.divergence {
+      font-size: 14px;
+      fill: #2F4A6D;
+    }
+
+    text.value {
+      font-size: 14px;
+    }
+
+    text.title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    text.label {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    text.source {
+      font-size: 10px;
+    }
+      </style>
     <title>Electorate</title>
   </head>
   <body>
@@ -30,6 +107,9 @@
       </div>
     </nav>
     <br><br><br>
+    <div id='layout'>
+    <div id='container'>
+      <svg /> </div></div><br><br>
     <div class="container-fluid">
       <div class="card border-info mb-3">
           <div class="card-header"><h1 class="text-center">Demographics</h1></div>
@@ -125,6 +205,8 @@
       </div>
     </div>
   </div>
+  <br>
   </body>
-    <script src="demo.js"></script>
+      <script src="demo.js"></script>
+    <script src="electorate.js"></script>
 </html>
