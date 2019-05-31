@@ -162,4 +162,4 @@
       .attr('x', barWidth / 2 + margin)
       .attr('y', 40)
       .attr('text-anchor', 'middle')
-      .text('Seats Gained in Hellenic Parliament')
+      .text('Seats Gained in Greek Parliament')
