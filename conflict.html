@@ -144,11 +144,11 @@
   <div class="row">
     <div class="col-md-12 center">
       <div class="card border-info mb-3">
-        <div class="card-header"><h3><strong>POLICE</strong></h3></div>
-        <div class="lead card-body">
+        <div class="card-header"><h3 id="police"><strong>POLICE</strong></h3></div>
+        <div id="police_body" class="collapse lead card-body">
             <div id="causes"></div>
             <p>
-              The government has been reluctant to address the violence perpetrated against immigrants. When Athens residents seek help from the police, authorities direct them to the Golden Dawn to find a "solution" for what is seen as an "immigrant problem." Thusly, the Golden Dawn was able to run on a twin platform for the 2012 general elections: opposition to immigration and condemnation of the bailouts.
+              The government has been reluctant to address the violence perpetrated against immigrants. When Athens residents seek help from the police, authorities direct them to the Golden Dawn to find a "solution" for what is seen as an "immigrant problem." Thus, the Golden Dawn was able to run on a twin platform for the 2012 general elections: opposition to immigration and condemnation of the bailouts.
               To this day, the police remain a conservative enclave.
             </p>
           </div>
@@ -182,4 +182,16 @@
 
     <script src = "conflict.js"> </script>
   </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+  var i = true;
+  $( "#police" ).click(function() {
+    if(i) {
+      $('#police_body').removeClass('collapse');
+      $('#police_body').addClass('collapse.show');
+    }
+      i = false;
+
+  });
+  </script>
 </html>
