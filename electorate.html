@@ -108,7 +108,7 @@
       <svg /> </div></div><br><br>
     <div class="container-fluid">
       <div class="card border-info mb-3">
-          <div class="card-header"><h1 class="display-3 text-center">Demographics</h1></div>
+          <div class="card-header"><h1 id="demographics" class="display-3 text-center">Demographics</h1></div>
           <div class="card-body">
             <!-- <hr> -->
       <div class="row">
@@ -203,6 +203,21 @@
   </div>
   <br>
   </body>
-      <script src="demo.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="demo.js"></script>
     <script src="electorate.js"></script>
+    <script type="text/javascript">
+    var i = true;
+    d3.select("#demographics")
+      .on("mouseover", function() {
+        if(i) {
+          drawPie([43/100, 1-.43],"#voter1");
+          drawPie([24/100, 1-.24],"#voter2");
+          drawPie([15/100, 1-.15],"#voter3");
+          scoreBar([67/100],"#male");
+          scoreBar([63/100],"#income");
+          i = false;
+        }
+      });
+    </script>
 </html>

@@ -50,9 +50,9 @@ var trans1 = function(b) {
   return function(t) { return arc(i(t)); };
 }
 
-drawPie([43/100, 1-.43],"#voter1");
-drawPie([24/100, 1-.24],"#voter2");
-drawPie([15/100, 1-.15],"#voter3");
+// drawPie([43/100, 1-.43],"#voter1");
+// drawPie([24/100, 1-.24],"#voter2");
+// drawPie([15/100, 1-.15],"#voter3");
 
 var scoreBar = function(data,id){
   svg = d3.select(id)
@@ -84,5 +84,5 @@ var scoreBar = function(data,id){
     .attr("width", data[0] * 500);
 }
 
-scoreBar([67/100],"#male");
-scoreBar([63/100],"#income");
+// scoreBar([67/100],"#male");
+// scoreBar([63/100],"#income");

@@ -148,7 +148,7 @@
       .attr('y', margin / 2.4)
       .attr('transform', 'rotate(-90)')
       .attr('text-anchor', 'middle')
-      .text('Seats')
+      .text('Total Seats in Parliament')
 
     svg.append('text')
       .attr('class', 'label')
